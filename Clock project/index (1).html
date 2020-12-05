@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Hey Amity!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+<section class="digital-clock">
+    <!--Clock-->
+    <div>
+      <h1 id="clock"></h1>
+    </div>
+  </section>
+
+  <section class="world-clock">
+
+    <!--World clock-->
+    <div class="world">
+      <p>Tokyo: <span id="tokyo"></span></p>
+      <p>Brisbane: <span id="brisbane"></span></p>
+      <p>Los Angeles: <span id="la"></span></p>
+      <p>Toronto: <span id="toronto"></span></p>
+    </div>
+
+  </section>
+
+  <section class="timer">
+
+    <!--Timer-->
+    <div>
+      <form>
+        <label>Hours: </label>
+        <input type="text" value="0" id="hrs">
+        <label>Minutes: </label>
+        <input type="text" value="0" id="mins">
+        <label>Seconds: </label>
+        <input type="text" value="0" id="secs">
+      </form>
+      <button id="startbtn" onclick="startTimer()">Start</button>
+      <button id="resetbtn" onclick="resetTimer()">Reset</button>
+      <div>
+        <p id="error">Invalid Input</p>
+        <p>Time remaining:</p>
+        <h1 id="time">hh:mm:ss</h1>
+      </div>
+    </div>
+</section>
+    <script src="app.js">
+  
+    </script>
+  </body>
+
+</html>
+
+
+
+
